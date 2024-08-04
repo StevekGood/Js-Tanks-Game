@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tanks Map Editor</title>
+</head>
+<body>
+    <a href="index.html">
+        <button class="side-button">&leftarrow; Return to the Game</button>
+    </a>
+    <div class="select-wrapper">
+        <label for="map-code">Code:</label>
+        <textarea id="map-code" cols="20" rows="1" spellcheck="false"></textarea>
+        <button onclick="load();">Load Map</button>
+        <button onclick="copy();">Copy Map</button>
+    </div>
+    <div class="select-wrapper">
+        <span title="Select tile to paint with it">
+            <label for="tile-select">Select Tile:</label>
+            <select id="tile-select" onchange="onTileChange();">
+                <option value="0">Box</option>
+                <option value="1">Brick</option>
+                <option value="2">Steel</option>
+                <option value="3">Player</option>
+            </select>
+        </span>
+        <span title="Hotkey: E">
+            <label for="erase-checkbox">Erase Mode:</label>
+            <input type="checkbox" id="erase-checkbox" onchange="onEraseChange();">
+        </span>
+        <button onclick="clearMap()">Clear Map</button>
+    </div>
+    
+    <div id="canvas-wrapper">
+        <canvas id="game-canvas" width="256" height="256"></canvas>
+    </div>
+
+    <script src="Scripts/Editor/mapEditor.js"></script>
+</body>
+</html>

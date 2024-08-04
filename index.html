@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tanks</title>
+</head>
+<body>
+    <a href="mapEditor.html">
+        <button class="side-button">&leftarrow; Go to Map Editor</button>
+    </a>
+    <div class="select-wrapper">
+        <label for="player-select">Ammount of players:</label>
+        <select id="player-select">
+            <option value="1">1 player</option>
+            <option value="2">2 players</option>
+            <option value="3">3 players</option>
+            <option value="4">4 players</option>
+        </select>
+        <button onclick="StartGame();">Play!</button>
+    </div>
+    <div id="canvas-wrapper">
+        <canvas id="game-canvas" width="256" height="256"></canvas>
+    </div>
+
+    <script src="Scripts/weaponModifier.js"></script>
+    <script src="Scripts/machinegunMod.js"></script>
+    <script src="Scripts/laserMod.js"></script>
+    <script src="Scripts/landmineMod.js"></script>
+    <script src="Scripts/c4Mod.js"></script>
+    <script src="Scripts/shpatelMod.js"></script>
+    <script src="Scripts/behavior.js"></script>
+    <script src="Scripts/pickable.js"></script>
+    <script src="Scripts/shield.js"></script>
+    <script src="Scripts/pickableWeapon.js"></script>
+    <script src="Scripts/damagable.js"></script>
+    <script src="Scripts/pickableHeal.js"></script>
+    <script src="Scripts/bullet.js"></script>
+    <script src="Scripts/laser.js"></script>
+    <script src="Scripts/landmine.js"></script>
+    <script src="Scripts/inputable.js"></script>
+    <script src="Scripts/tank.js"></script>
+    <script src="Scripts/pickableSpeed.js"></script>
+    <script src="Scripts/pickableShield.js"></script>
+    <script src="Scripts/pickableAirstrike.js"></script>
+    <script src="Scripts/mark.js"></script>
+    <script src="Scripts/plane.js"></script>
+    <script src="Scripts/playerInput.js"></script>
+    <script src="Scripts/constants.js"></script>
+    <script src="Scripts/c4Mine.js"></script>
+    <script src="Scripts/sprite.js"></script>
+    <script src="Scripts/gameobject.js"></script>
+    <script src="Scripts/game.js"></script>
+    <script src="Scripts/main.js"></script>
+</body>
+</html>
