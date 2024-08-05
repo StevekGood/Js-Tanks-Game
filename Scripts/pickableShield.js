@@ -9,7 +9,7 @@ class PickableShield extends Pickable
     OnCollide(gameobject)
     {
         let temp = gameobject.GetBehavior(Damageble);
-        if (temp)
+        if (temp && temp.health > 0)
         {
             this.targetHealth = temp;
             this.savedHealth = temp.health;
