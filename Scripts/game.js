@@ -1,15 +1,3 @@
-async function loadMaps() {
-    try {
-        const response = await fetch('../Maps/Maps.json', {mode: "cors"});
-        if (!response.ok) throw new Error(`HTTP ${response.status}`);
-        
-        const maps = await response.json();
-        return maps;
-    } catch (error) {
-        console.error(error);
-    }
-}
-
 class Game
 {
     constructor(ctx)
@@ -34,8 +22,9 @@ class Game
 
         GameObject.Id = 0;
         PlayerInput.PlayerId = 0;
-        
-        let maps = await loadMaps();
+
+        let response = await fetch('../Maps/Maps.json', {mode: "cors"});
+        let maps = await response.json();
         let neededTanksCount = Number(document.getElementById("player-select").value);
 
         if (maps.length > 0)
