@@ -63,7 +63,7 @@ class C4Mine extends Behavior
 C4Mine.range = (TILE_WIDTH * 3) ** 2;
 
 const C4 = {
-    src: "../Sprites/Sprites.png",
+    src: "Sprites/Sprites.png",
     frame: [4, 2],
     behavior: [
         {
