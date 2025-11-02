@@ -5,7 +5,7 @@ class Game
         this.ctx = ctx;
     }
 
-    Initialize()
+    Initialize(maps)
     {   
         if (this.updateInterval)
         {
@@ -22,9 +22,7 @@ class Game
 
         GameObject.Id = 0;
         PlayerInput.PlayerId = 0;
-
-        let response = await fetch('../Maps/Maps.json', {mode: "cors"});
-        let maps = await response.json();
+        
         let neededTanksCount = Number(document.getElementById("player-select").value);
 
         if (maps.length > 0)
