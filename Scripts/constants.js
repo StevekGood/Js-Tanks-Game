@@ -4,7 +4,7 @@ const MAP_WIDTH = 256;
 const MAP_HEIGHT = 256;
 
 const CRATE = {
-    src: "../Sprites/Sprites.png",
+    src: "Sprites/Sprites.png",
     hitboxWidth: TILE_WIDTH,
     hitboxHeight: TILE_HEIGHT,
     frame: [1, 0],
@@ -17,7 +17,7 @@ const CRATE = {
 }
 
 const BRICK = {
-    src: "../Sprites/Sprites.png",
+    src: "Sprites/Sprites.png",
     hitboxWidth: TILE_WIDTH,
     hitboxHeight: TILE_HEIGHT,
     frame: [2, 0],
@@ -30,7 +30,7 @@ const BRICK = {
 }
 
 const STEEL = {
-    src: "../Sprites/Sprites.png",
+    src: "Sprites/Sprites.png",
     hitboxWidth: TILE_WIDTH,
     hitboxHeight: TILE_HEIGHT,
     frame: [1, 4],
@@ -43,7 +43,7 @@ const STEEL = {
 }
 
 const TANK = {
-    src: "../Sprites/Sprites.png",
+    src: "Sprites/Sprites.png",
     hitboxWidth: TILE_WIDTH - 2,
     hitboxHeight: TILE_HEIGHT - 2,
     frame: [0, 0],
@@ -71,12 +71,12 @@ const TANK_COLORS = [
 ]
 
 const EXPLOSION = {
-    src: "../Sprites/Sprites.png",
+    src: "Sprites/Sprites.png",
     frame: [2, 3]
 }
 
 const SHIELD = {
-    src: "../Sprites/Sprites.png",
+    src: "Sprites/Sprites.png",
     frame: [3, 4],
     behavior: [
         {
@@ -87,7 +87,7 @@ const SHIELD = {
 }
 
 const PLANE = {
-    src: "../Sprites/Sprites.png",
+    src: "Sprites/Sprites.png",
     frame: [5, 1],
     behavior: [
         {
@@ -98,7 +98,7 @@ const PLANE = {
 }
 
 const MARK = {
-    src: "../Sprites/Sprites.png",
+    src: "Sprites/Sprites.png",
     frame: [5, 0],
     behavior: [
         {
@@ -110,7 +110,7 @@ const MARK = {
 
 
 const BULLET = {
-    src: "../Sprites/Sprites.png",
+    src: "Sprites/Sprites.png",
     hitboxWidth: 4,
     hitboxHeight: 4,
     isTrigger: true,
@@ -124,7 +124,7 @@ const BULLET = {
 }
 
 const BULLET2 = {
-    src: "../Sprites/Sprites.png",
+    src: "Sprites/Sprites.png",
     hitboxWidth: 4,
     hitboxHeight: 4,
     isTrigger: true,
@@ -138,7 +138,7 @@ const BULLET2 = {
 }
 
 const LASER = {
-    src: "../Sprites/Sprites.png",
+    src: "Sprites/Sprites.png",
     hitboxWidth: 4,
     hitboxHeight: 4,
     frame: [3, 2],
@@ -151,7 +151,7 @@ const LASER = {
 }
 
 const LANDMINE = {
-    src: "../Sprites/Sprites.png",
+    src: "Sprites/Sprites.png",
     hitboxWidth: 10,
     hitboxHeight: 10,
     isTrigger: true,
@@ -165,7 +165,7 @@ const LANDMINE = {
 }
 
 const HEAL = {
-    src: "../Sprites/Sprites.png",
+    src: "Sprites/Sprites.png",
     hitboxWidth: 8,
     hitboxHeight: 8,
     isTrigger: true,
@@ -179,7 +179,7 @@ const HEAL = {
 }
 
 const SUPER_HEAL = {
-    src: "../Sprites/Sprites.png",
+    src: "Sprites/Sprites.png",
     hitboxWidth: 8,
     hitboxHeight: 8,
     isTrigger: true,
@@ -193,7 +193,7 @@ const SUPER_HEAL = {
 }
 
 const PICKABLE_SHIELD = {
-    src: "../Sprites/Sprites.png",
+    src: "Sprites/Sprites.png",
     hitboxWidth: 8,
     hitboxHeight: 8,
     isTrigger: true,
@@ -207,7 +207,7 @@ const PICKABLE_SHIELD = {
 }
 
 const PICKABLE_SPEED = {
-    src: "../Sprites/Sprites.png",
+    src: "Sprites/Sprites.png",
     hitboxWidth: 8,
     hitboxHeight: 8,
     isTrigger: true,
@@ -221,7 +221,7 @@ const PICKABLE_SPEED = {
 }
 
 const PICKABLE_AIRSTRIKE = {
-    src: "../Sprites/Sprites.png",
+    src: "Sprites/Sprites.png",
     hitboxWidth: 8,
     hitboxHeight: 8,
     isTrigger: true,
@@ -235,7 +235,7 @@ const PICKABLE_AIRSTRIKE = {
 }
 
 const WEAPON1 = {
-    src: "../Sprites/Sprites.png",
+    src: "Sprites/Sprites.png",
     hitboxWidth: 8,
     hitboxHeight: 8,
     isTrigger: true,
@@ -249,7 +249,7 @@ const WEAPON1 = {
 }
 
 const WEAPON2 = {
-    src: "../Sprites/Sprites.png",
+    src: "Sprites/Sprites.png",
     hitboxWidth: 8,
     hitboxHeight: 8,
     isTrigger: true,
@@ -263,7 +263,7 @@ const WEAPON2 = {
 }
 
 const WEAPON3 = {
-    src: "../Sprites/Sprites.png",
+    src: "Sprites/Sprites.png",
     hitboxWidth: 8,
     hitboxHeight: 8,
     isTrigger: true,
@@ -277,7 +277,7 @@ const WEAPON3 = {
 }
 
 const WEAPON4 = {
-    src: "../Sprites/Sprites.png",
+    src: "Sprites/Sprites.png",
     hitboxWidth: 8,
     hitboxHeight: 8,
     isTrigger: true,
@@ -291,7 +291,7 @@ const WEAPON4 = {
 }
 
 const WEAPON5 = {
-    src: "../Sprites/Sprites.png",
+    src: "Sprites/Sprites.png",
     hitboxWidth: 8,
     hitboxHeight: 8,
     isTrigger: true,
