@@ -2,7 +2,9 @@ const GAME = new Game(document.getElementById("game-canvas").getContext("2d"));
 
 function StartGame()
 {
-    GAME.Initialize();
+    let response = await fetch('../Maps/Maps.json', {mode: "cors"});
+    let maps = await response.json();
+    GAME.Initialize(maps);
 }
 
 let gettingInput = false;
