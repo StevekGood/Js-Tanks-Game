@@ -13,7 +13,7 @@ class GameObject
         this.gameInstance = gameInstance;
         this.sprite = new Sprite({
             gameobject: this,
-            src: config.src || "../Sprites/placeholder.png",
+            src: config.src || "Sprites/placeholder.png",
             frame: config.frame || [0, 0],
         })
 
