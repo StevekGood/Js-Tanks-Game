@@ -1,10 +1,17 @@
 const GAME = new Game(document.getElementById("game-canvas").getContext("2d"));
 
+async function LoadMaps()
+{
+    const response = await fetch('../Maps/Maps.json');
+    const maps = await response.json();
+    return maps;
+}
+
 function StartGame()
 {
-    let response = await fetch('../Maps/Maps.json', {mode: "cors"});
-    let maps = await response.json();
-    GAME.Initialize(maps);
+    LoadMaps().then(maps => {
+        GAME.Initialize(maps);
+    });
 }
 
 let gettingInput = false;
