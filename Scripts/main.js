@@ -2,7 +2,7 @@ const GAME = new Game(document.getElementById("game-canvas").getContext("2d"));
 
 async function LoadMaps()
 {
-    const response = await fetch('/Maps/Maps.json');
+    const response = await fetch('Maps/Maps.json');
     const maps = await response.json();
     return maps;
 }
