@@ -14,7 +14,7 @@ let MapContent = [];
 let SelectedTile = 0;
 let EraseMode = false;
 let SpriteSheet = new Image();
-SpriteSheet.src = "../../Sprites/Sprites.png";
+SpriteSheet.src = "/Sprites/Sprites.png";
 let SpritesOffsets = [
     [1, 0],
     [2, 0],
