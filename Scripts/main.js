@@ -2,9 +2,30 @@ const GAME = new Game(document.getElementById("game-canvas").getContext("2d"));
 
 async function LoadMaps()
 {
-    const response = await fetch('../Maps/Maps.json');
-    const maps = await response.json();
-    return maps;
+    const pathTests = [
+        '../Maps/Maps.json',
+        './../Maps/Maps.json', 
+        'Maps/Maps.json',
+        '/Maps/Maps.json'
+    ];
+    
+    for (const path of pathTests) {
+        console.log(`Testing path: ${path}`);
+        try {
+            const response = await fetch(path);
+            console.log(`   Status: ${response.status}`);
+            
+            if (response.ok) {
+                const maps = await response.json();
+                console.log(`success with path: ${path}`);
+                return maps;
+            }
+        } catch (error) {
+            console.log(`   Failed: ${error.message}`);
+        }
+    }
+    
+    throw new Error("All paths failed to load maps");
 }
 
 function StartGame()
